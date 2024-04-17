@@ -24,10 +24,10 @@ import App from './App.vue';
 import './prosemirror.css';  // Путь к файлу prosemirror.css изменен на относительный
 import './packages/app/tables.css';        // Теперь tables.css находится в папке src
 
-import 'virtual:windi.css';
-import 'floating-vue/dist/style.css';
-import 'vue-toastification/dist/index.css';
-import 'better-write-plugin-theme/css/inject.css';
+import './virtual:windi.css';
+import './floating-vue/dist/style.css';
+import './vue-toastification/dist/index.css';
+import './better-write-plugin-theme/css/inject.css';
 
 const env = useEnv();
 
