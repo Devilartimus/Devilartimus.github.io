@@ -21,8 +21,8 @@ import i18n from './lang';
 import App from './App.vue';
 
 // Обновленные пути к CSS файлам
-import '././prosemirror.css';  // Путь к файлу prosemirror.css изменен на относительный
-import '././tables.css';        // Теперь tables.css находится в папке src
+import './packages/app/prosemirror.css';  // Путь к файлу prosemirror.css изменен на относительный
+import './packages/app/tables.css';        // Теперь tables.css находится в папке src
 
 import 'virtual:windi.css';
 import 'floating-vue/dist/style.css';
