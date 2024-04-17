@@ -34,11 +34,13 @@
   },
   "include": [
     "src/**/*.ts",
+    "src/**/*.js",
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "desktop/**/*.ts"
-  ],
+    "desktop/**/*.ts",
+    "desktop/**/*.js"
+, "src/main.js"  ],
   "exclude": [
     "node_modules",
     "/pdfmake.js$/",
