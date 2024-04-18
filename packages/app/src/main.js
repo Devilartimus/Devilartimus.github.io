@@ -1,22 +1,22 @@
-import { createApp } from './vue';
-import { installSchemaOrg } from './@vueuse/schema-org-vite/vite';
-import * as Sentry from './@sentry/vue';
-import { BrowserTracing } from './@sentry/tracing';
-import { useRegisterSW } from './virtual:pwa-register/vue';
-import { createHead } from './@vueuse/head';
-import { createPinia } from './pinia';
-import { createPluginCore } from './better-write-plugin-core';
-import { Events } from './better-write-types';
-import { PDFPlugin as pdf } from './vue3-pdfmake';
-import { ProviderPlugin as provider } from './vue-directive-providers';
-import { MotionPlugin as motion } from './@vueuse/motion';
-import tooltip from './floating-vue';
-import toast, { POSITION } from './vue-toastification';
-import mitt from './mitt';
-import { useEnv } from './use/env';
+import { createApp } from './vue.js';
+import { installSchemaOrg } from './@vueuse/schema-org-vite/vite.js';
+import * as Sentry from './@sentry/vue.js';
+import { BrowserTracing } from './@sentry/tracing.js';
+import { useRegisterSW } from './virtual:pwa-register/vue.js';
+import { createHead } from './@vueuse/head.js';
+import { createPinia } from './pinia.js';
+import { createPluginCore } from './better-write-plugin-core.js';
+import { Events } from './better-write-types.js';
+import { PDFPlugin as pdf } from './vue3-pdfmake.js';
+import { ProviderPlugin as provider } from './vue-directive-providers.js';
+import { MotionPlugin as motion } from './@vueuse/motion.js';
+import tooltip from './floating-vue.js';
+import toast, { POSITION } from './vue-toastification.js';
+import mitt from './mitt.js';
+import { useEnv } from './use/env.js';
 
-import router from './router';
-import i18n from './lang';
+import router from './router.js';
+import i18n from './lang.js';
 
 import App from './App.vue';
 

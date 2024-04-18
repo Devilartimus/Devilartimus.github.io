@@ -36,19 +36,27 @@
     gtag('config', 'G-M2PE0QXEVR');
   </script>
 
-  <!-- Загрузка prosemirror.css локально -->
+  <!-- Загрузка Vue с GitHub -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2" defer></script>
+  <!-- Загрузка sentry/vue с GitHub -->
+  <script src="https://cdn.jsdelivr.net/npm/@sentry/vue" defer></script>
+  <!-- Загрузка floating-vue с GitHub -->
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Akryum/floating-vue/main/packages/floating-vue/dist/style.css">
+  <!-- Загрузка prosemirror.css из локального файла -->
   <link rel="stylesheet" href="./prosemirror.css">
+  <!-- Загрузка таблицы стилей tables.css из локального файла -->
+  <link rel="stylesheet" href="./packages/app/tables.css">
+  <!-- Загрузка стилей из виртуального файла windi.css -->
+  <link rel="stylesheet" href="./virtual:windi.css">
+  <!-- Загрузка стилей из vue-toastification -->
+  <link rel="stylesheet" href="./vue-toastification/dist/index.css">
+  <!-- Загрузка стилей из better-write-plugin-theme -->
+  <link rel="stylesheet" href="./better-write-plugin-theme/css/inject.css">
 </head>
 <body>
   <div id="app"></div>
 
-  <!-- Загрузка Vue с CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2" defer></script>
-  <!-- Загрузка sentry/vue с CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@sentry/vue" defer></script>
-  <!-- Загрузка floating-vue стилей с GitHub -->
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/Akryum/floating-vue/main/packages/floating-vue/src/style.css">
-  <!-- Загрузка основного JavaScript -->
+  <!-- Загрузка JavaScript файла main.js из локального источника -->
   <script src="./src/main.js" type="module" defer></script>
 </body>
 </html>
