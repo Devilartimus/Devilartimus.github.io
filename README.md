@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://betterwrite.io/">
+  <a href="https://devilartimus.github.io/">
     <img src="./.github/logo.png" height="220">
   </a>
 </p>
@@ -13,14 +13,14 @@ betterwrite.io
 <h4>
 
 <p align="center">
-  <a href="https://betterwrite.io"><img src="https://img.shields.io/github/license/Novout/better-write?style=for-the-badge&color=15203B&label="></a>
-  <a href="https://betterwrite.io"><img src="https://img.shields.io/github/lerna-json/v/Novout/better-write?style=for-the-badge&color=0f172a&label="></a>
+  <a href="https://devilartimus.github.io/"><img src="https://img.shields.io/github/license/Novout/better-write?style=for-the-badge&color=15203B&label="></a>
+  <a href="https://devilartimus.github.io/"><img src="https://img.shields.io/github/lerna-json/v/Novout/better-write?style=for-the-badge&color=0f172a&label="></a>
 <p>
 
 <br>
 
 <p align="center">
-  <a href="https://betterwrite.io/">
+  <a href="https://devilartimus.github.io//">
     <img src="./.github/main.png" width="90%" />
   </a>
 <p>
