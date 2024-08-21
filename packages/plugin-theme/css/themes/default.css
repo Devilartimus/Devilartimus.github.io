@@ -1,0 +1,18 @@
+/* for other routes */
+:root {
+  --scr-track: #d1d5db;
+  --scr-thumb: #1f2937;
+  --scr-thumb-hover: #777;
+  --wb-selection: rgba(0, 0, 0, 0.1);
+  --wb-text-selection: #000;
+  --theme-black: #000000;
+  --theme-white: #ffffff;
+  --theme-editor-scrollbar-track: #1f2937;
+  --theme-editor-scrollbar-thumb:  #565f6d;
+  --theme-editor-nprogress-background: #e1e1e1;
+  --theme-editor-nprogress-height: 2px;
+  --theme-pwa-prompt-text: #e1e1e1;
+  --theme-pwa-prompt-background: #1f2937;
+  --theme-pwa-prompt-button-text: #e1e1e1;
+  --theme-pwa-prompt-button-background: #6b7280;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@-webkit-keyframes autofill {
+  0%,
+  100% {
+    color: #666;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+input::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+input[type='color'] {
+  -webkit-appearance: none;
+  border: none;
+  width: 2rem;
+  height: 1rem;
+  cursor: pointer;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  text-align: center;
+}
+
+/* firefox */
+[contenteditable] {
+  outline: none;
+  -moz-user-select: text;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* waiting for future support experimental features */
+
+*::grammar-error {
+  background-color: var(--theme-grammar-error);
+  color: black;
+}
+
+*::spelling-error {
+  background-color: var(--theme-spelling-error);
+  color: black;
+}
+
+*::target-text {
+  background-color: var(--theme-target-text);
+  color: black;
+}
+
+*::selection {
+  background: var(--wb-selection);
+  color: var(--wb-text-selection);
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.editable:empty:before {
+  content: attr(data-placeholder);
+  opacity: 0.75;
+  cursor: text;
+}
+
+.blink::after {
+  content: '|';
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.wb-edit {
+  height: calc(100vh - 3rem);
+}
+
+.wb-max-edit {
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+}
+
+.bg-custom-blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  transform: scale(1.05); 
+}
+
+.bg-custom-grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.bg-custom-saturate {
+  -webkit-filter: saturate(2);
+  -moz-filter: saturate(2);
+  -o-filter: saturate(2);
+  -ms-filter: saturate(2);
+  filter: saturate(2);
+}
+
+.bg-custom-sepia {
+  -webkit-filter: sepia(100%);
+  -moz-filter: sepia(100%);
+  -o-filter: sepia(100%);
+  -ms-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.bg-rgba-blur {
+  backdrop-filter: blur(10px);
+}
