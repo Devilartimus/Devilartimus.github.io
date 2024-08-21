@@ -1,12 +1,12 @@
 import { LanguageRaw, LanguageI18N } from 'better-write-types'
 export * as enUS from './en-US'
-export * as ruRU from './ru-RU'
+export * as ptBR from './pt-BR'
 
 export const VueI18nLocales = [
   {
-    name: 'Русский',
-    code: 'ru',
-    iso: 'ru-RU',
+    name: 'Português',
+    code: 'br',
+    iso: 'pt-BR',
   },
   {
     name: 'English',
@@ -15,27 +15,27 @@ export const VueI18nLocales = [
   },
 ]
 
-export const VueI18nAllISO = ['en-US', 'ru-RU']
+export const VueI18nAllISO = ['en-US', 'pt-BR']
 
 export const VueI18nSEO = [
   {
     property: 'og:locale',
-    content: 'ru_RU',
-    key: 'ru',
-  },
-  {
-    property: 'og:locale:alternate',
     content: 'en_US',
     key: 'en',
   },
+  {
+    property: 'og:locale:alternate',
+    content: 'pt_BR',
+    key: 'br',
+  },
 ]
 
-export const LanguagesRaw: LanguageRaw[] = ['Русский', 'English']
+export const LanguagesRaw: LanguageRaw[] = ['Português do Brasil', 'English']
 
 export const localeToRaw = (lang: LanguageRaw) => {
   return (
     {
-      'Русский': 'ru',
+      'Português do Brasil': 'br',
       English: 'en',
     }[lang] || 'en'
   )
@@ -45,7 +45,7 @@ export const onSwitchLanguage = (lang: LanguageRaw): Promise<LanguageI18N> => {
   return new Promise((res) => {
     const set =
       {
-        'Русский': 'ru',
+        'Português do Brasil': 'br',
         English: 'en',
       }[lang] || 'en'
 
@@ -54,7 +54,7 @@ export const onSwitchLanguage = (lang: LanguageRaw): Promise<LanguageI18N> => {
     const iso =
       {
         en: 'en-US',
-        br: 'ru-RU',
+        br: 'pt-BR',
       }[set] || 'en-US'
 
     ;(document.querySelector('html') as HTMLElement).lang = iso

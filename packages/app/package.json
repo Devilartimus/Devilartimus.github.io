@@ -1,12 +1,12 @@
 {
-  "name": "eazy-report",
+  "name": "better-write-app",
   "version": "1.3.12",
-  "repository": "https://github.com/Devilartimus/devilartimus.github.io",
+  "repository": "https://github.com/Novout/betterwrite",
   "description": "A Creative Word Processor",
   "author": {
-    "name": "Tikhonov Artem",
-    "email": "devilartimus@mail.ru",
-    "url": "https://github.com/Devilartimus"
+    "name": "Giovane Cardoso",
+    "email": "novout@hotmail.com",
+    "url": "https://github.com/Novout"
   },
   "scripts": {
     "dev": "vite --port 3000",

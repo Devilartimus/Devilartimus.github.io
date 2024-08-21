@@ -1,2 +1,2 @@
-export type LanguageI18N = 'ru' | 'en'
-export type LanguageRaw = 'Русский' | 'English'
+export type LanguageI18N = 'br' | 'en'
+export type LanguageRaw = 'Português do Brasil' | 'English'
